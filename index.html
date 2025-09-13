@@ -1,5 +1,19 @@
----
-layout: home
-# articles:
-#   excerpt_type: html
----
+<!-- Hero area: place near top of index.html -->
+<section class="site-hero" style="padding:2.25rem; display:flex; gap:1.25rem; align-items:center;">
+  <div style="flex:0 0 160px;">
+    <img src="{{ '/assets/img/profile/jane-profile.jpg' | relative_url }}" alt="Katilyn Bell" style="width:160px;height:160px;border-radius:14px;object-fit:cover;box-shadow:0 12px 30px rgba(0,0,0,0.08);">
+  </div>
+  <div style="flex:1;">
+    <h1 style="margin:0 0 .25rem 0; font-size:2rem; color:var(--text-dark);">Katilyn Bell</h1>
+    <p style="margin:0 0 .75rem 0; color:#3c3340; font-weight:500;">
+      Campus staff with <strong>The Navigators</strong> at Houston Christian University — discipling student leaders, running NavNight, prayer retreats, and disciple-making.
+    </p>
+
+    <div style="display:flex;gap:.75rem;align-items:center;">
+      <a class="donate-cta" href="{{ site.giving_link }}" target="_blank" rel="noopener">Partner with Me</a>
+      <a class="donate-cta" href="/about/" style="background: transparent; border: 1px solid rgba(25,16,35,0.06); box-shadow:none; color:var(--text-dark); font-weight:600;">
+        About my ministry
+      </a>
+    </div>
+  </div>
+</section>

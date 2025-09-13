@@ -6,4 +6,19 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
 }
+
+.navigation__item--donate a.donate-button {
+  background-color: #e75480; /* rose pink */
+  color: #fff !important;
+  padding: 0.4em 1em;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.navigation__item--donate a.donate-button:hover {
+  background-color: #c7436e;
+}
+
 /* end custom scss snippet */
