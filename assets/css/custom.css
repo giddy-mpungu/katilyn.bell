@@ -1,0 +1,65 @@
+/* assets/css/custom.css - custom styles (paste exactly) */
+
+/* Load Google font (Poppins) - fallback included in head include below */
+body {
+  font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Pastel theme accents */
+:root{
+  --accent-1: #dba0e6; /* soft lavender */
+  --accent-2: #ffd1dc; /* pale pink */
+  --text-dark: #191023;
+}
+
+/* Header donate CTA (rounded, playful) */
+.header-donate-btn {
+  display: inline-flex;
+  align-items:center;
+  gap: .5rem;
+  padding: .45rem .85rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent-2), var(--accent-1));
+  color: var(--text-dark);
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  text-decoration: none;
+  border: none;
+}
+.header-donate-btn:hover {
+  transform: translateY(-2px);
+  transition: .18s ease-out;
+}
+
+/* Make the hero card softer */
+.site-hero {
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(11,10,12,0.06);
+  background: linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.95));
+}
+
+/* Gallery grid */
+.gallery-grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+  gap: 14px;
+}
+.gallery-grid img {
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  border-radius:12px;
+}
+
+/* Donate CTA on support page */
+.donate-cta {
+  display:inline-block;
+  padding: .85rem 1.25rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg,var(--accent-2),var(--accent-1));
+  color: var(--text-dark);
+  font-weight:700;
+  text-decoration:none;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  font-size: 1.05rem;
+}
